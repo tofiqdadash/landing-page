@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="./reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/04faeee10d.js" crossorigin="anonymous"></script>
     <title>Landing page</title>
          <!-- add icon link -->
          <link rel = "icon" href = 
@@ -16,9 +16,24 @@
                  type = "image/x-icon">
 </head>
 <body>
+    <aside class="sidebar" id="sidebar">
+        <i class="fa-solid fa-xmark"></i>
+        <div id="menu-close-btn" class="close">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#" id="contact-us">Contact Us</a></li>
+            </ul>
+        </div>
+    </aside>
     <!--header section-->
     <header class = "main-header">
         <nav>
+            <div class="menu" id="menu-btn">
+                <i class="fa-solid fa-bars fas-2x" ></i>
+            </div>
             <!--logo side-->
         <div class="logo">
             <img src="./assets/Group.png" alt="the box logo">
@@ -185,5 +200,139 @@
        </div>
        <a href="#" id="get-your-consultation">Get your consultation</a>
    </section>
+
+   <!--Projects-->
+   <section class="project-examples">
+       <div class="projects-menu">
+           <h2>Projects</h2>
+           <ul>
+               <li><a href="#">
+                  <img src="./assets/bluneline.png" alt="blue line"> 
+                All
+                </a></li>
+               <li><a href="#">
+                <img src="./assets/bluneline.png" alt="blue line"> 
+                Commercial
+                </a></li>
+               <li><a href="#">
+                <img src="./assets/bluneline.png" alt="blue line"> 
+                Residental
+                </a></li>
+               <li><a href="#">                  
+                   <img src="./assets/bluneline.png" alt="blue line">
+                   Other</a></li>
+           </ul>
+        </div>
+        <div class="certain-projects">
+            <div class="hotel-house">
+                <img src="./assets/wildstone.png" alt="Wildstone">
+                <div class="address">
+                <h3>Wildstone Infra Hotel</h3>
+                <p>2715 Ash Dr. San Jose, South Dakota</p>
+                </div>
+            </div>
+
+            <div class="hotel-house">
+                <img src="./assets/wishstone.png" alt="Wildstone">
+                <div class="address">
+                <h3>Wish Stone Building</h3>
+                <p>2972 Westheimer Rd. Santa Ana, Illinois</p>      
+                </div>
+
+            </div>
+
+           
+            <div class="hotel-house">
+                <img src="./assets/parkinston.png" alt="Wildstone">
+                <div class="address">
+                  <h3>Mr.Parkinston's House</h3>
+                <p>3517 W. Gray St. Utica, Pennsylvania</p>  
+                </div>
+            </div>
+    
+            <div class="hotel-house">
+                <img src="./assets/oregano.png" alt="Wildstone">
+                <div class="address">
+                  <h3>Oregano Height</h3>
+                <p>2464 Royal Ln. Mesa, New Jersey</p>  
+                </div>
+                
+            </div>
+  
+        </div>
+
+        <div class="button-container">
+            <a href="#">
+                <div>
+                <img src="./assets/backclick.png" alt="back click">
+                <h4>Back</h4> 
+                </div>
+             </a>
+            <img src="./assets/ellipse.png" alt="ellipse" id="ellipse">
+            <img src="./assets/ellipse.png" alt="ellipse" id="ellipse">
+            <img src="./assets/ellipse.png" alt="ellipse" id="ellipse">
+
+            <a href="#">
+                <div>
+                <h4>Next</h4>
+                <img src="./assets/nextclick.png" alt="next click">   
+                </div>
+            </a>
+        </div>
+   </section>
+
+   <!--Form-->
+   <section class="form">
+        <h3>What can us do for you?</h3>
+        <p>We are ready to work on a project of any complexity,<br> whether it’s commercial or residential.</p>
+       <div class="form-container">
+           <input type="text" id="name" placeholder="Your name*">
+           <input type="text" id="email" placeholder="Email*">
+           <input type="text" id="contacting-reason" placeholder="Reason for Contacting*">
+           <input type="text" id="phone" placeholder="Phone">
+           <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea> 
+          <p id="requirement">* indicates a required field</p> 
+        </div>
+
+       <a href="#">Submit</a>
+   </section>
+
+   <!--Footer-->
+   <footer>
+       <div class="footer-left">
+        <h4><span class="color-blue">ADDRESS:  </span>6391 Elgin St. Celina, Delaware 10299</h4>
+        <h4><span class="color-blue">PHONE:  </span>+84 1102 2703</h4>
+        <h4><span class="color-blue">EMAIL:  </span>hello@thebox.com</h4>
+        <div class="the-box-logo">
+            <img src="./assets/Group.png" alt="the box logo">
+            <img src="./assets/TheBox.png" alt="the box text">
+        </div>
+       </div>
+
+       <div class="footer-right">
+           <div class="newsletter">
+            <h4><span class="color-blue">NEWSLETTER:  </span></h4> 
+            <div class="newsletter-input">
+                <input type="text" placeholder="Your email here">
+                <a href="#">Subscribe</a>
+            </div>          
+           </div>
+
+           <div class="social">
+            <h4><span class="color-blue">SOCIAL:  </span></h4>
+            <div class="social-apps">
+                <img src="./assets/facebook.png" alt="facebook">
+                <img src="./assets/linkedin.png" alt="linkedin">
+                <img src="./assets/twitter.png" alt="twitter">
+            </div>  
+           </div>
+ 
+       </div>
+
+       <div class="footer-bottom">
+           <h4>TheBox Company © 2022. All Rights Reserved</h4>
+       </div>
+   </footer>
+   <script src="./script.js"></script>
 </body>
 </html>
